@@ -1,0 +1,7 @@
+{
+    "connections":
+    {
+        "name":"heartTrack_db",
+        "connection":"sqlite:///data.db"
+    }
+}
