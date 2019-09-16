@@ -24,7 +24,7 @@ api.add_resource(hello,"/hello")
 # api.add_resource(divideTwoNum, "/divideTwoNum")
 def create_app():
     app = Flask(__name__, static_url_path='')
-    app.config['SQLALCHEMY_DATABASE_URI'] = app_config.environment["connections"][0]['connection']
+    app.config['SQLALCHEMY_DATABASE_URI'] = app_config.environment["connections"]['connection']
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     CORS(app)
 
