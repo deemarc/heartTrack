@@ -1,9 +1,9 @@
-from db import db
+from general_tool import db
 
-class heart_data(db.Model):
+class HeartData(db.Model):
     """ heart rate data table """
-    __tablename__ = "heart_data"
+    __tablename__ = "HeartData"
     id = db.Column(db.Integer, db.Sequence('data_id'), primary_key=True)
     cur_bpm = db.Column(db.Integer)
-    curTime = db.Column(db.Timestamp)
+    curTime = db.Column(db.TIMESTAMP)
     dataset = db.Column(db.Integer)

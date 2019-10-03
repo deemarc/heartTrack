@@ -2,6 +2,6 @@
     "connections":
     {
         "name":"heartTrack_db",
-        "connection":"sqlite:///data.db"
+        "connection":"sqlite:////home/debian/heartTrack/dataHR.db"
     }
 }

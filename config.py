@@ -6,7 +6,7 @@ class Config(object):
     '''
     def __init__(self):
         # self.environmentfile = '/data/apps/cs_sched/etc/environment.json'
-        self.environmentfile = './environment.json'
+        self.environmentfile = "/home/debian/data/environment.json"
 
         # Read the environment config in.  IF the config read fails, we should die with a traceback.  App can't start.
         with open(self.environmentfile) as data_file:
